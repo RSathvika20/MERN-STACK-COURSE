@@ -1,0 +1,46 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.di {
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.flower {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.oli {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.mutual {
+  color: rgb(162, 161, 161);
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.add {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+.sq {
+  border-width: 1px;
+  width: 300px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  border-color: rgb(199, 196, 196);
+  border-style: solid;
+}
+.sat {
+  font-family: Arial;
+}
