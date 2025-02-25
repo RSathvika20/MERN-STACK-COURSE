@@ -1,0 +1,19 @@
+.search_box {
+  width: 350px;
+  line-height: 1px;
+}
+.email {
+  line-height: 1px;
+  margin-bottom: 10px;
+}
+button {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 30px;
+}
