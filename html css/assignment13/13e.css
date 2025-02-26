@@ -1,0 +1,63 @@
+.div1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 400px;
+  box-shadow: 0 0 5px rgba(16, 16, 16, 0.25);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.inbox {
+  font-size: 14px;
+  color: rgb(120, 115, 115);
+  margin-bottom: 20px;
+}
+.div3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.div4 {
+  margin-right: 10px;
+}
+
+.flo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.div5 {
+  flex: 1;
+}
+
+.div6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+.chewy {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 14px;
+  color: rgb(120, 115, 115);
+}
+
+.biggest {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hey {
+  color: rgb(120, 115, 115);
+}
