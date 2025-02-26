@@ -1,0 +1,32 @@
+.flex {
+  width: 200px;
+  border-style: solid;
+  border-color: rgb(194, 191, 191);
+
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+.val {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.num {
+  background-color: rgb(40, 78, 167);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
