@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+body {
+  background-color: white;
+  color: gray;
+}
+.navbar {
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+.nav-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.zerodha {
+  color: gray;
+  text-decoration: none;
+}
+.x {
+  color: gray;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 650px;
+}
+.pricing {
+  color: blue;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 650px;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.main_text {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+
+.char {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.list {
+  color: rgb(155, 155, 155);
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+.below_pricing {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  gap: 30px;
+  margin-top: 100px;
+}
+.amount_cards {
+  text-align: center;
+  padding: 20px;
+  size: 500px;
+}
+.price {
+  margin-bottom: 30px;
+}
+
+.img {
+  width: 250px;
+}
+
+.hamburger {
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.b {
+  color: rgb(66, 66, 66);
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+
+  margin-bottom: 50px;
+  width: 400px;
+  letter-spacing: 1px;
+}
+
+.p2 {
+  margin-top: 5px;
+  width: 310px;
+  color: rgb(102, 102, 102);
+  line-height: 28px;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+.navbar {
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
