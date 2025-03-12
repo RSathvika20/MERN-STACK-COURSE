@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function convertLen(length, from, to) {
+        if (from === "km" && to === "miles") {
+          return `${length / 1.6} miles`;
+        } else if (from === "miles" && to === "km") {
+          return `${length * 1.6} km`;
+        } else if (from === to) {
+          return `${length} ${to}`;
+        }
+      }
+      console.log(convertLen(37, "m", "miles"));
+      console.log(convertLen(56, "miles", "km"));
+
+      console.log(convertLen(80, "km", "km"));
+    </script>
+  </body>
+</html>
