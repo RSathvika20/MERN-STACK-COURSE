@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Click Counter</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        padding-top: 60px;
+        background-color: lightblue;
+      }
+
+      .value {
+        font-size: 50px;
+        margin: 25px 0;
+        color: black;
+      }
+
+      button {
+        padding: 12px 24px;
+        font-size: 18px;
+        margin: 8px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      #increase {
+        background-color: green;
+        color: white;
+      }
+
+      #decrease {
+        background-color: red;
+        color: white;
+      }
+
+      button:hover {
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click Counter App</h1>
+    <div class="value" id="display">0</div>
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+
+    <script>
+      let total = 0;
+
+      const display = document.getElementById("display");
+      const addButton = document.getElementById("increase");
+      const subtractButton = document.getElementById("decrease");
+
+      addButton.addEventListener("click", () => {
+        total++;
+        display.textContent = total;
+      });
+
+      subtractButton.addEventListener("click", () => {
+        if (total > 0) {
+          total--;
+          display.textContent = total;
+        }
+      });
+    </script>
+  </body>
+</html>

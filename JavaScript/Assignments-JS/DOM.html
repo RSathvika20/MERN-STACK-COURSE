@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive List</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Task List</h1>
+      <ul id="taskList">
+        <li class="task">Task 1</li>
+        <li class="task">Task 2</li>
+        <li class="task">Task 3</li>
+      </ul>
+      <button id="addTask">Add Task</button>
+    </div>
+
+    <script>
+      const taskList = document.getElementById("taskList");
+      const addButton = document.getElementById("addTask");
+
+      function handleRemove(event) {
+        event.target.remove();
+      }
+
+      function createTaskItem(text = "New Task") {
+        const item = document.createElement("li");
+        item.textContent = text;
+        item.classList.add("task");
+        item.addEventListener("click", handleRemove);
+        return item;
+      }
+
+      addButton.addEventListener("click", () => {
+        const newItem = createTaskItem();
+        taskList.appendChild(newItem);
+      });
+
+      document.querySelectorAll(".task").forEach((item) => {
+        item.addEventListener("click", handleRemove);
+      });
+    </script>
+  </body>
+</html>
