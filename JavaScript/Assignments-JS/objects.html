@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Get references to the important elements
+      const addButton = document.getElementById("addButton");
+      const myList = document.getElementById("myList");
+
+      // Function to add a new item
+      addButton.addEventListener("click", () => {
+        const newItem = document.createElement("li");
+        newItem.textContent = "New Item";
+        newItem.className = "item";
+
+        // Add click event to remove the item when clicked
+        newItem.addEventListener("click", () => {
+          newItem.remove();
+        });
+
+        myList.appendChild(newItem);
+      });
+
+      // Add event listeners to existing list items
+      const existingItems = document.querySelectorAll(".item");
+      existingItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.remove();
+        });
+      });
+    </script>
+  </body>
+</html>

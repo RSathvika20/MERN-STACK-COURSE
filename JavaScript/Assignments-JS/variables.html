@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //global scope
+      var globalVar = "I am global";
+
+      function greet() {
+        console.log(globalVar);
+      }
+
+      greet();
+      console.log(globalVar);
+
+      //LOCAL SCOPE
+
+      function sayHello() {
+        let message = "Hello from inside the function";
+        console.log(message); // Works here
+      }
+
+      sayHello();
+      // console.log(message); //  message is not defined
+
+      //BLOCK SCOPE
+      if (true) {
+        const blockScopedVar = "I am block scoped";
+        console.log(blockScopedVar); // Works here
+      }
+      // console.log(blockScoped); // blockScoped is not defined
+
+      //ONE MORE EXAMPLE
+      if (true) {
+        var leakedVar = "I'm not block-scoped";
+      }
+      console.log(leakedVar); // ✅ Accessible (not ideal)
+
+      //Variable Shadowing
+      let name = "Alice";
+
+      function introduce() {
+        let name = "Bob"; // Shadows the outer 'name'
+        console.log(name); // Bob
+      }
+
+      introduce();
+      console.log(name); // Alice
+    </script>
+  </body>
+</html>
